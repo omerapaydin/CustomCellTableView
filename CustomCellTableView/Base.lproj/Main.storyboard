@@ -33,11 +33,22 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvp-fm-5bl">
+                                                    <rect key="frame" x="298" y="28" width="75" height="35"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    <connections>
+                                                        <action selector="buttons:" destination="HC5-bt-rgi" eventType="touchUpInside" id="mAG-Xh-lgy"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="XEE-E3-oes" firstAttribute="top" secondItem="sid-fE-Vig" secondAttribute="topMargin" constant="7" id="4e0-qj-aHM"/>
-                                                <constraint firstItem="XEE-E3-oes" firstAttribute="centerX" secondItem="sid-fE-Vig" secondAttribute="centerX" id="SRE-Ot-Oi4"/>
-                                                <constraint firstItem="XEE-E3-oes" firstAttribute="centerY" secondItem="sid-fE-Vig" secondAttribute="centerY" id="VnM-te-AUI"/>
+                                                <constraint firstItem="XEE-E3-oes" firstAttribute="top" secondItem="sid-fE-Vig" secondAttribute="topMargin" constant="7" id="Byc-Wg-uCR"/>
+                                                <constraint firstItem="gvp-fm-5bl" firstAttribute="top" secondItem="sid-fE-Vig" secondAttribute="topMargin" constant="17" id="Hzi-1a-wVc"/>
+                                                <constraint firstItem="XEE-E3-oes" firstAttribute="centerX" secondItem="sid-fE-Vig" secondAttribute="centerX" id="Sp6-1S-yyq"/>
+                                                <constraint firstItem="gvp-fm-5bl" firstAttribute="leading" secondItem="XEE-E3-oes" secondAttribute="trailing" constant="76.333333333333343" id="UCU-yi-AlT"/>
+                                                <constraint firstItem="XEE-E3-oes" firstAttribute="centerY" secondItem="gvp-fm-5bl" secondAttribute="centerY" id="UJN-fY-CPd"/>
+                                                <constraint firstItem="XEE-E3-oes" firstAttribute="centerY" secondItem="sid-fE-Vig" secondAttribute="centerY" id="bON-kn-I9n"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -50,10 +61,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="jYp-N3-off" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MdG-D1-N7C"/>
-                            <constraint firstItem="jYp-N3-off" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RPR-10-CXh"/>
-                            <constraint firstItem="jYp-N3-off" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jan-fs-m88"/>
-                            <constraint firstItem="jYp-N3-off" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nWt-i6-IIY"/>
+                            <constraint firstItem="jYp-N3-off" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FOX-5p-W50"/>
+                            <constraint firstItem="jYp-N3-off" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Mi5-xa-NPQ"/>
+                            <constraint firstItem="jYp-N3-off" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Xdw-Kc-PCS"/>
+                            <constraint firstItem="jYp-N3-off" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YFh-wn-z2I"/>
                         </constraints>
                     </view>
                     <connections>

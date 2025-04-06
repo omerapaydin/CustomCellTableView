@@ -7,9 +7,19 @@
 
 import UIKit
 
+
+
+protocol TableViewHucreProtocol{
+    func hucreUzerindekiButtonaTikla(indexPath: IndexPath)
+}
+
+
 class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var textLabel1: UILabel!
+    
+    var hucreProtocol: TableViewHucreProtocol?
+    var indexPath: IndexPath?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,4 +32,9 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func buttons(_ sender: Any) {
+        
+        hucreProtocol?.hucreUzerindekiButtonaTikla(indexPath: indexPath!)
+        
+    }
 }

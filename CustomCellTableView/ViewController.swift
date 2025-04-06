@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate ,TableViewHucreProtocol{
     
 
     @IBOutlet weak var tableView: UITableView!
@@ -32,6 +32,9 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         tableView.delegate = self
         tableView.dataSource = self
     }
+    func hucreUzerindekiButtonaTikla(indexPath: IndexPath) {
+        print("Button tıklandı: \(kisilerListe[indexPath.row].kisiAd!)")
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return kisilerListe.count
@@ -40,6 +43,10 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "kisilerHucre") as? TableViewCell
         cell?.textLabel1.text = kisilerListe[indexPath.row].kisiAd
+        
+        cell?.hucreProtocol = self
+        cell?.indexPath = indexPath
+        
         return cell!
     }
 
